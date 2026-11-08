@@ -1,0 +1,1146 @@
+
+:root {
+    --bg: #101114;
+    --panel: #191a1e;
+    --panel-light: #222329;
+    --orange: #e99038;
+    --orange-light: #ffb45e;
+    --white: #f2f0ed;
+    --muted: #a5a3a1;
+    --border: rgba(255, 255, 255, 0.13);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    background: var(--bg);
+    color: var(--white);
+    font-family: "DM Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button, input {
+    font: inherit;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    min-height: 72px;
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: rgba(15, 16, 19, .96);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.brand, .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.brand-icon {
+    color: var(--orange);
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -5px;
+}
+
+.brand-name {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.4;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+}
+
+.nav-links a {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    color: #c3c1c0;
+    font-size: 13px;
+    position: relative;
+    transition: .3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--orange-light);
+}
+
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: var(--orange);
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-tools {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    padding: 8px 13px;
+    color: var(--muted);
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 105px;
+    font-size: 12px;
+}
+
+.tool-button,
+.home-link {
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 560px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 65px 5.5%;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background:
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Union_Carbide_pesticide_factory,_Bhopal,_India,_1985.jpg")
+        center / cover no-repeat,
+        #292929;
+    filter: grayscale(35%) brightness(.7);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        linear-gradient(90deg,
+            rgba(12, 13, 16, .97) 0%,
+            rgba(12, 13, 16, .82) 27%,
+            rgba(12, 13, 16, .25) 68%,
+            rgba(12, 13, 16, .35) 100%),
+        linear-gradient(0deg,
+            rgba(12, 13, 16, .9),
+            transparent 45%);
+}
+
+.hero-content {
+    max-width: 510px;
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow,
+.section-label {
+    color: var(--orange);
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.orange-dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: var(--orange);
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.hero h1 {
+    font-size: clamp(65px, 8vw, 105px);
+    line-height: 1;
+    letter-spacing: -5px;
+    margin-top: 12px;
+    font-weight: 800;
+}
+
+.hero h2 {
+    color: var(--orange);
+    font-size: clamp(19px, 2.5vw, 29px);
+    letter-spacing: 5px;
+    margin-top: 8px;
+}
+
+.hero-description {
+    color: #d0cecc;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 350px;
+    margin-top: 12px;
+}
+
+.hero-details {
+    display: flex;
+    gap: 22px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.hero-details div {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #e5e2df;
+}
+
+.detail-icon {
+    color: var(--orange);
+    font-size: 22px;
+}
+
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+    padding: 13px 19px;
+    border: 1px solid var(--orange);
+    border-radius: 6px;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .6px;
+    transition: .3s;
+}
+
+.primary-button span {
+    color: var(--orange);
+    font-size: 19px;
+}
+
+.primary-button:hover {
+    background: var(--orange);
+    color: #151515;
+    transform: translateY(-2px);
+}
+
+.primary-button:hover span {
+    color: #151515;
+}
+
+.hero-quote {
+    position: absolute;
+    top: 35px;
+    right: 5%;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    line-height: 1.5;
+    border-left: 2px solid var(--orange);
+    padding-left: 14px;
+    font-size: 15px;
+}
+
+.hero-case-number {
+    position: absolute;
+    right: 5%;
+    bottom: 25px;
+    color: #d4d0cc;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.hero-case-number span {
+    color: var(--orange);
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+/* ================= OVERVIEW PANELS ================= */
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.55fr .85fr;
+    gap: 17px;
+    padding: 20px 4%;
+}
+
+.panel {
+    min-width: 0;
+    background: linear-gradient(145deg, #202126, #15161a);
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.timeline-panel,
+.facts-panel {
+    padding: 19px;
+}
+
+.panel-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.panel-heading > div {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.panel-heading h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.heading-icon {
+    color: var(--orange);
+    font-size: 22px;
+}
+
+.panel-label {
+    color: var(--orange);
+    font-size: 12px;
+}
+
+.live-label {
+    color: #b8b7b5;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+/* ================= TIMELINE ================= */
+
+.timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+}
+
+.timeline-list::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 13px;
+    bottom: 13px;
+    left: 7px;
+    background: rgba(233, 144, 56, .5);
+}
+
+.timeline-event {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    text-align: left;
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    padding: 8px 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.timeline-dot {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    border: 3px solid #6c6b69;
+    background: var(--panel);
+    border-radius: 50%;
+}
+
+.timeline-event strong {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.timeline-event small {
+    display: block;
+    font-size: 10px;
+    margin-top: 3px;
+    color: #93918f;
+}
+
+.timeline-event.active {
+    color: var(--orange-light);
+}
+
+.timeline-event.active .timeline-dot {
+    border-color: var(--orange);
+    background: var(--orange);
+    box-shadow: 0 0 0 4px rgba(233, 144, 56, .13);
+}
+
+.timeline-detail {
+    border-top: 1px solid var(--border);
+    margin-top: 13px;
+    padding-top: 13px;
+}
+
+.timeline-detail > span {
+    color: var(--orange);
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.timeline-detail h4 {
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.timeline-detail small {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.timeline-detail p {
+    color: #b9b7b4;
+    font-size: 11px;
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+/* ================= EXPLORE THE SITE ================= */
+
+.site-panel {
+    padding: 19px;
+}
+
+.site-panel .panel-heading {
+    margin-bottom: 12px;
+}
+
+.site-image {
+    width: 100%;
+    height: 245px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background:
+        linear-gradient(0deg, rgba(0, 0, 0, .5), transparent 40%),
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Bhopal-Union_Carbide_2.jpg")
+        center / cover no-repeat,
+        #343434;
+    transition: transform .3s;
+}
+
+.site-image:hover {
+    transform: scale(1.01);
+}
+
+.site-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(255, 255, 255, .13);
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.image-caption {
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 5px black;
+    z-index: 2;
+}
+
+.image-controls {
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+    display: flex;
+    gap: 7px;
+    z-index: 2;
+}
+
+.image-controls button {
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    background: rgba(15, 15, 15, .75);
+    color: white;
+    border-radius: 50%;
+    font-size: 19px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.image-controls button:hover {
+    background: var(--orange);
+    color: #111;
+}
+
+.site-note {
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 11px;
+}
+
+/* ================= FACTS ================= */
+
+.facts-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.facts-panel .panel-heading {
+    margin-bottom: 2px;
+}
+
+.fact-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.fact-icon {
+    color: var(--orange);
+    font-size: 22px;
+    width: 25px;
+    text-align: center;
+}
+
+.fact-item small,
+.fact-item strong {
+    display: block;
+}
+
+.fact-item small {
+    color: #aaa7a3;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.fact-item strong {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.facts-note {
+    color: #96928e;
+    font-size: 9px;
+    line-height: 1.5;
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+}
+
+/* ================= FEATURE CARDS ================= */
+
+.feature-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 0 4% 25px;
+}
+
+.feature-card {
+    min-height: 125px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 14px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--panel);
+    transition: .3s;
+}
+
+.feature-card:hover {
+    border-color: var(--orange);
+    transform: translateY(-4px);
+}
+
+.feature-image {
+    width: 85px;
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-color: #343238;
+    background-position: center;
+    background-size: cover;
+}
+
+/* الصور الأصلية للكروت */
+
+.molecule-image {
+    background:
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Preparation_of_carbaryl_as_in_Bhopal.png")
+        center / contain no-repeat,
+        #25252a;
+}
+
+.human-image {
+    background:
+        linear-gradient(135deg, rgba(20, 20, 20, .1), rgba(20, 20, 20, .6)),
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Abdul_Jabbar_Kahn_20130121.jpg")
+        center / cover no-repeat,
+        #343238;
+}
+
+.environment-image {
+    background:
+        linear-gradient(135deg, rgba(20, 20, 20, .1), rgba(20, 20, 20, .6)),
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Bhopal_Plant_1.JPG")
+        center / cover no-repeat,
+        #343238;
+}
+
+.lessons-image {
+    background:
+        linear-gradient(135deg, rgba(20, 20, 20, .1), rgba(20, 20, 20, .6)),
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Bhopal_Plant_10.JPG")
+        center / cover no-repeat,
+        #343238;
+}
+
+.feature-content {
+    min-width: 0;
+    padding-right: 14px;
+}
+
+.feature-content span {
+    display: block;
+    color: var(--orange);
+    font-size: 9px;
+    letter-spacing: .5px;
+    margin-bottom: 7px;
+}
+
+.feature-content h3 {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.feature-content p {
+    color: #aaa7a3;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.card-arrow {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid var(--border);
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: var(--orange);
+}
+
+/* ================= CONTENT SECTIONS ================= */
+
+.content-section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 55px 35px;
+    border-top: 1px solid var(--border);
+}
+
+.content-section h2 {
+    font-size: clamp(27px, 4vw, 40px);
+    margin-top: 13px;
+}
+
+.content-section h2 span {
+    color: var(--orange);
+}
+
+.content-divider {
+    width: 65px;
+    height: 3px;
+    background: var(--orange);
+    margin: 20px 0;
+}
+
+.content-section p {
+    max-width: 750px;
+    color: #b9b7b4;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-top: 12px;
+}
+
+/* ================= STORY SECTION ================= */
+
+.story-section {
+    padding: 65px 5%;
+    background: #15161a;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.story-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.story-heading span {
+    color: var(--orange);
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.story-heading h2 {
+    font-size: clamp(27px, 4vw, 42px);
+    margin: 13px 0;
+}
+
+.story-heading p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.story-main {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 35px;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.story-photo {
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, .15);
+    background: #292929;
+}
+
+.story-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(35%) brightness(.8);
+    transition: transform .5s;
+}
+
+.story-photo:hover img {
+    transform: scale(1.04);
+}
+
+.photo-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: linear-gradient(transparent, #000);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.story-text {
+    padding: 15px;
+}
+
+.story-number {
+    color: var(--orange);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.story-text h3 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.story-text p {
+    color: #b6b4b1;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 13px;
+}
+
+.story-button {
+    display: inline-block;
+    color: var(--orange);
+    border-bottom: 1px solid var(--orange);
+    padding-bottom: 7px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.story-steps {
+    max-width: 1200px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.story-step {
+    padding: 23px;
+    background: #202126;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.story-step:hover {
+    border-color: var(--orange);
+    transform: translateY(-5px);
+}
+
+.story-step span {
+    color: var(--orange);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.story-step h3 {
+    font-size: 15px;
+    margin: 13px 0 8px;
+}
+
+.story-step p {
+    color: #aaa;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.image-credit {
+    text-align: right;
+    color: #777;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    min-height: 90px;
+    border-top: 1px solid var(--border);
+    padding: 20px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-brand .brand-icon {
+    font-size: 35px;
+}
+
+.footer-brand strong,
+.footer-brand small {
+    display: block;
+}
+
+.footer-brand strong {
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.footer-brand small {
+    color: var(--muted);
+    font-size: 9px;
+    margin-top: 4px;
+}
+
+.footer > p {
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+/* ================= SEARCH ================= */
+
+.search-match {
+    outline: 2px solid var(--orange);
+    outline-offset: 3px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1050px) {
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr 1.4fr;
+    }
+
+    .facts-panel {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+
+    .facts-panel .panel-heading,
+    .facts-note {
+        grid-column: 1 / -1;
+    }
+
+    .feature-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .navbar {
+        min-height: 65px;
+        padding: 0 5%;
+    }
+
+    .brand-icon {
+        font-size: 35px;
+    }
+
+    .brand-name {
+        font-size: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 0;
+        height: auto;
+        padding: 15px 5%;
+        background: #17181c;
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 13px 0;
+        height: auto;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-links a.active::after {
+        display: none;
+    }
+
+    .nav-tools {
+        gap: 10px;
+    }
+
+    .search-box {
+        padding: 6px 9px;
+    }
+
+    .search-box input {
+        width: 65px;
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 65px 6%;
+        align-items: flex-start;
+    }
+
+    .hero-background {
+        background-position: 60% center;
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(90deg,
+                rgba(12, 13, 16, .93),
+                rgba(12, 13, 16, .48)),
+            linear-gradient(0deg,
+                rgba(12, 13, 16, .8),
+                transparent);
+    }
+
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+        letter-spacing: 3px;
+    }
+
+    .hero-quote {
+        display: none;
+    }
+
+    .hero-case-number {
+        bottom: 17px;
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr;
+        padding: 15px 4%;
+    }
+
+    .facts-panel {
+        grid-column: auto;
+        display: flex;
+    }
+
+    .site-image {
+        height: 220px;
+    }
+
+    .feature-section {
+        grid-template-columns: 1fr;
+        padding: 0 4% 20px;
+    }
+
+    .feature-card {
+        min-height: 115px;
+    }
+
+    .content-section {
+        padding: 40px 6%;
+        margin: 15px auto;
+    }
+
+    .content-section p {
+        font-size: 13px;
+    }
+
+    .story-main {
+        grid-template-columns: 1fr;
+    }
+
+    .story-photo {
+        height: 270px;
+    }
+
+    .story-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story-text h3 {
+        font-size: 25px;
+    }
+
+    .footer {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .nav-tools .home-link {
+        display: none;
+    }
+
+    .search-box input {
+        width: 48px;
+    }
+
+    .hero-details {
+        gap: 13px;
+    }
+
+    .hero-details div {
+        font-size: 9px;
+    }
+
+    .story-steps {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1100px) {
+    .hero {
+        min-height: 620px;
+    }
+}

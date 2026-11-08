@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CHERNOBYL | Elements Universe</title>
+
+    <link rel="stylesheet" href="chernobyl.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BACKGROUND ATMOSPHERE -->
+    <div class="background-layer"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- TOP NAVIGATION -->
+    <header class="topbar">
+
+        <a href="index.html" class="brand">
+            <div class="brand-symbol">
+                <span>⚛</span>
+            </div>
+
+            <div class="brand-name">
+                <strong>ELEMENTS</strong>
+                <span>UNIVERSE</span>
+            </div>
+        </a>
+
+        <nav class="main-nav">
+            <a href="#overview" class="active">Explore</a>
+            <a href="#reconstruction">3D Reactor</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#science">Science</a>
+            <a href="#archive">Archive</a>
+        </nav>
+
+        <div class="topbar-tools">
+
+            <div class="search-box">
+                <span>⌕</span>
+                <input
+                    type="search"
+                    id="archiveSearch"
+                    placeholder="Search archive..."
+                >
+            </div>
+
+            <button class="icon-button" id="languageButton" aria-label="Language">
+                ◎
+            </button>
+
+            <button class="icon-button" id="fullscreenButton" aria-label="Fullscreen">
+                ⛶
+            </button>
+
+        </div>
+
+        <button class="mobile-menu-button" id="mobileMenuButton">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- MAIN EXPERIENCE -->
+    <main>
+
+        <!-- HERO -->
+        <section class="hero-section" id="overview">
+
+            <div class="hero-image"></div>
+            <div class="hero-shade"></div>
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    <span class="status-dot"></span>
+                    NUCLEAR INCIDENT RECONSTRUCTION
+                </div>
+
+                <h1>CHERNOBYL</h1>
+
+                <div class="hero-subtitle">
+                    THE NIGHT THE REACTOR FAILED
+                </div>
+
+                <div class="hero-date">
+                    <span class="date-line"></span>
+                    <span>26 APRIL 1986</span>
+                </div>
+
+                <p class="hero-description">
+                    An investigation into the reactor failure,
+                    the physics behind the disaster, and its
+                    lasting consequences.
+                </p>
+
+                <a href="#reconstruction" class="explore-button">
+                    <span class="play-icon">▶</span>
+                    <span>START EXPLORATION</span>
+                    <span class="button-arrow">↗</span>
+                </a>
+
+            </div>
+
+
+            <!-- HERO DATA -->
+            <div class="hero-data">
+
+                <div class="data-item">
+                    <span class="data-label">LOCATION</span>
+                    <strong>UKRAINIAN SSR</strong>
+                </div>
+
+                <div class="data-item">
+                    <span class="data-label">REACTOR</span>
+                    <strong>UNIT 04</strong>
+                </div>
+
+                <div class="data-item">
+                    <span class="data-label">REACTOR TYPE</span>
+                    <strong>RBMK-1000</strong>
+                </div>
+
+            </div>
+
+
+            <!-- RADIATION GRAPHIC -->
+            <div class="radiation-display">
+                <div class="rad-circle rad-circle-one"></div>
+                <div class="rad-circle rad-circle-two"></div>
+                <div class="rad-circle rad-circle-three"></div>
+                <div class="radiation-symbol">☢</div>
+
+                <span class="rad-caption">NUCLEAR EVENT</span>
+                <span class="rad-code">CASE / 001</span>
+            </div>
+
+        </section>
+
+
+        <!-- REACTOR EXPLORATION -->
+        <section class="reactor-section" id="reconstruction">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-index">01 / ENGINEERING</span>
+                    <h2>THE REACTOR</h2>
+                    <p>Explore the structure of an RBMK-1000 nuclear reactor.</p>
+                </div>
+
+                <div class="section-meta">
+                    <span>3D RECONSTRUCTION</span>
+                    <span class="live-indicator">● INTERACTIVE</span>
+                </div>
+
+            </div>
+
+
+            <div class="reactor-layout">
+
+                <!-- LEFT INFORMATION PANEL -->
+                <aside class="reactor-info-panel">
+
+                    <span class="panel-label">REACTOR SPECIFICATION</span>
+
+                    <h3>RBMK-1000</h3>
+
+                    <p>
+                        A graphite-moderated, water-cooled
+                        reactor design developed in the
+                        Soviet Union.
+                    </p>
+
+                    <div class="spec-divider"></div>
+
+                    <div class="spec-row">
+                        <span>DESIGN</span>
+                        <strong>RBMK</strong>
+                    </div>
+
+                    <div class="spec-row">
+                        <span>UNIT</span>
+                        <strong>NO. 4</strong>
+                    </div>
+
+                    <div class="spec-row">
+                        <span>MODERATOR</span>
+                        <strong>GRAPHITE</strong>
+                    </div>
+
+                    <div class="spec-row">
+                        <span>COOLANT</span>
+                        <strong>WATER</strong>
+                    </div>
+
+                    <a href="#science" class="technical-link">
+                        VIEW TECHNICAL ANALYSIS
+                        <span>↗</span>
+                    </a>
+
+                </aside>
+
+
+                <!-- 3D MODEL VIEWPORT -->
+                <div class="reactor-viewport">
+
+                    <div class="viewport-top">
+
+                        <span>REACTOR / 04</span>
+
+                        <div class="viewport-status">
+                            <span class="status-dot"></span>
+                            MODEL VIEWPORT
+                        </div>
+
+                    </div>
+
+                    <div id="reactorScene">
+
+                        <div class="scene-loading">
+                            <div class="loading-ring"></div>
+                            <span>INITIALIZING 3D MODEL</span>
+                        </div>
+
+                    </div>
+
+                    <div class="viewport-bottom">
+
+                        <span>DRAG TO ROTATE</span>
+
+                        <div class="viewport-controls">
+                            <button id="zoomInButton" aria-label="Zoom in">+</button>
+                            <button id="zoomOutButton" aria-label="Zoom out">−</button>
+                            <button id="resetCameraButton" aria-label="Reset camera">↺</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT TIMELINE PANEL -->
+               <aside class="timeline-preview" id="timeline">
+
+                    <div class="panel-heading">
+                        <span>INCIDENT TIMELINE</span>
+                        <span>1986</span>
+                    </div>
+
+                    <div class="mini-timeline">
+
+                        <button class="timeline-point active" data-step="0">
+                            <span class="point-marker"></span>
+
+                            <span class="point-content">
+                                <strong>Test Preparation</strong>
+                                <small>25–26 April 1986</small>
+                            </span>
+                        </button>
+
+                        <button class="timeline-point" data-step="1">
+                            <span class="point-marker"></span>
+
+                            <span class="point-content">
+                                <strong>Reactor Instability</strong>
+                                <small>26 April 1986</small>
+                            </span>
+                        </button>
+
+                        <button class="timeline-point" data-step="2">
+                            <span class="point-marker"></span>
+
+                            <span class="point-content">
+                                <strong>Reactor Destruction</strong>
+                                <small>26 April 1986</small>
+                            </span>
+                        </button>
+
+                        <button class="timeline-point" data-step="3">
+                            <span class="point-marker"></span>
+
+                            <span class="point-content">
+                                <strong>Radioactive Release</strong>
+                                <small>Following the accident</small>
+                            </span>
+                        </button>
+
+                    </div>
+
+                    <div class="timeline-detail">
+
+                        <span class="detail-label">SELECTED EVENT</span>
+
+                        <h4 id="timelineTitle">Test Preparation</h4>
+
+                        <p id="timelineDescription">
+                            A turbine rundown test was being conducted
+                            as part of a planned electrical safety test.
+                        </p>
+
+                        <span id="timelineDate">25–26 APRIL 1986</span>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+            </section>
+            
+            
+<!-- WHY CHERNOBYL HAPPENED -->
+<section class="cause-section" id="why-it-happened">
+
+    <div class="cause-header">
+        <span class="section-tag">SCIENTIFIC INVESTIGATION / 1986</span>
+
+        <h2>WHY CHERNOBYL <span>HAPPENED</span></h2>
+
+        <p>
+            Understanding the engineering failures,
+            operational conditions, and human decisions
+            behind the Chernobyl disaster.
+        </p>
+        
+        
+
+    </div>
+
+    <div class="cause-intro">
+        <div class="cause-number">01</div>
+        <div>
+            <span>THE ROOT OF THE DISASTER</span>
+            <h3>It Was Not One Mistake.</h3>
+            <p>
+                The Chernobyl disaster resulted from a combination
+                of serious reactor design flaws, unstable operating
+                conditions, inadequate safety procedures, and
+                organizational failures.
+            </p>
+            
+            <figure class="cause-image">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/RBMK_positive_scram.svg"
+                     alt="RBMK reactor positive scram diagram"
+        loading="lazy"
+    >
+    
+               <figcaption>
+                   RBMK CONTROL ROD DESIGN — Technical illustration
+           </figcaption>
+    </figure>
+
+        </div>
+    </div>
+
+    <div class="cause-timeline">
+
+        <article class="cause-card">
+            <span class="cause-step">01 / DESIGN FAILURE</span>
+            <h3>RBMK Reactor Design Flaws</h3>
+            <p>
+                The RBMK reactor had a dangerous positive void
+                coefficient under certain operating conditions.
+                As steam bubbles formed in the coolant, reactor
+                reactivity could increase instead of decrease.
+            </p>
+            <span class="cause-keyword">POSITIVE VOID COEFFICIENT</span>
+        </article>
+
+        <article class="cause-card">
+            <span class="cause-step">02 / THE EXPERIMENT</span>
+            <h3>The Safety Test</h3>
+            <p>
+                Engineers wanted to determine whether the
+                turbine's remaining rotational energy could
+                temporarily power essential cooling pumps
+                after an electrical supply interruption.
+            </p>
+            
+            
+<figure class="cause-image">
+    <img
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/Physics_student_inside_the_Control_Room_of_Unit_4_at_Chernobyl_NPP.jpg"
+        alt="Inside the control room of Chernobyl Unit 4"
+        loading="lazy"
+    >
+    <figcaption>
+        UNIT 4 CONTROL ROOM — Chernobyl Nuclear Power Plant
+    </figcaption>
+</figure>
+
+            <span class="cause-keyword">TURBINE RUN-DOWN TEST</span>
+        </article>
+
+        <article class="cause-card">
+            <span class="cause-step">03 / UNSTABLE CONDITIONS</span>
+            <h3>Reactor Instability</h3>
+            <p>
+                The reactor entered an unstable low-power
+                operating state. Its control configuration
+                and operating conditions increased the
+                difficulty of maintaining safe control.
+            </p>
+            
+            
+<figure class="cause-image">
+    <img
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/IAEA_02790015_(5613115146).jpg"
+        alt="Destroyed Chernobyl reactor after the 1986 accident"
+        loading="lazy"
+    >
+    <figcaption>
+        CHERNOBYL UNIT 4 — Archival photograph, 1986
+    </figcaption>
+</figure>
+
+            <span class="cause-keyword">REACTIVITY INSTABILITY</span>
+        </article>
+
+        <article class="cause-card">
+            <span class="cause-step">04 / SAFETY FAILURES</span>
+            <h3>Operational and Organizational Decisions</h3>
+            <p>
+                Safety procedures were compromised, and the
+                operating team did not have a complete
+                understanding of important reactor design
+                characteristics. Management and safety
+                culture failures also contributed.
+            </p>
+            <span class="cause-keyword">SAFETY CULTURE FAILURE</span>
+        </article>
+
+        <article class="cause-card">
+            <span class="cause-step">05 / THE CONSEQUENCE</span>
+            <h3>The Reactor Destruction</h3>
+            <p>
+                A rapid and extreme increase in reactor power
+                led to destructive explosions, severe damage
+                to Unit 4, and the release of radioactive
+                materials into the environment.
+            </p>
+            <span class="cause-keyword">APRIL 26, 1986</span>
+            
+            
+               
+
+        </article>
+
+    </div>
+
+    <div class="cause-conclusion">
+        <span>INVESTIGATION CONCLUSION</span>
+        <h3>A Chain of Failures.</h3>
+        <p>
+            Chernobyl was not simply an operator error.
+            It was the outcome of interacting technical,
+            operational, and institutional failures.
+        </p>
+    </div>
+
+</section>
+<!-- END WHY CHERNOBYL HAPPENED -->
+
+
+
+
+        <!-- FEATURE NAVIGATION -->
+        <section class="feature-section">
+
+            <a href="#science" class="feature-card">
+
+                <div class="feature-icon">⚛</div>
+
+                <div class="feature-text">
+                    <span>01 / UNDERSTANDING</span>
+                    <h3>THE SCIENCE</h3>
+                    <p>Understand the physics behind the disaster.</p>
+                </div>
+
+                <span class="feature-arrow">↗</span>
+
+            </a>
+
+
+            <a href="#archive" class="feature-card">
+
+                <div class="feature-icon">▤</div>
+
+                <div class="feature-text">
+                    <span>02 / DOCUMENTATION</span>
+                    <h3>THE ARCHIVE</h3>
+                    <p>Explore historical records and evidence.</p>
+                </div>
+
+                <span class="feature-arrow">↗</span>
+
+            </a>
+
+
+            <a href="#impact" class="feature-card">
+
+                <div class="feature-icon">◎</div>
+
+                <div class="feature-text">
+                    <span>03 / CONSEQUENCES</span>
+                    <h3>THE IMPACT</h3>
+                    <p>Discover the environmental and human consequences.</p>
+                </div>
+
+                <span class="feature-arrow">↗</span>
+
+            </a>
+
+        </section>
+
+
+        <!-- SCIENCE SECTION -->
+        <section class="content-section" id="science">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-index">02 / SCIENTIFIC INVESTIGATION</span>
+                    <h2>THE SCIENCE BEHIND THE FAILURE</h2>
+                </div>
+            </div>
+
+            <div class="science-grid">
+
+                <article class="science-card">
+                    <span class="science-number">01</span>
+                    <span class="science-category">REACTOR PHYSICS</span>
+                    <h3>Positive Void Coefficient</h3>
+                    <p>
+                        Understand how steam formation could
+                        increase reactivity under the conditions
+                        present during the accident.
+                    </p>
+                    <a href="#archive">EXPLORE CONCEPT ↗</a>
+                </article>
+
+                <article class="science-card">
+                    <span class="science-number">02</span>
+                    <span class="science-category">CONTROL SYSTEM</span>
+                    <h3>Control Rod Design</h3>
+                    <p>
+                        Examine how the reactor's control rod
+                        design contributed to the initial
+                        reactivity increase.
+                    </p>
+                    <a href="#archive">EXPLORE CONCEPT ↗</a>
+                </article>
+
+                <article class="science-card">
+                    <span class="science-number">03</span>
+                    <span class="science-category">SYSTEM FAILURE</span>
+                    <h3>Design & Operational Factors</h3>
+                    <p>
+                        Explore how design characteristics
+                        and operational conditions combined
+                        in the accident.
+                    </p>
+                    <a href="#archive">EXPLORE CONCEPT ↗</a>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ARCHIVE SECTION -->
+        <section class="content-section archive-section" id="archive">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-index">03 / HISTORICAL RECORDS</span>
+                    <h2>THE ARCHIVE</h2>
+                    <p>Historical documentation and scientific references.</p>
+                </div>
+            </div>
+
+            <div class="archive-grid">
+
+                <div class="archive-image">
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Chernobyl_reactor_4.jpg"
+                        alt="Chernobyl reactor 4 and its protective confinement"
+                        loading="lazy"
+                    >
+                    <span>REACTOR 04 / 2019</span>
+                </div>
+
+                <div class="archive-description">
+                    <span class="section-index">DOCUMENT 001</span>
+                    <h3>THE SITE OF THE INCIDENT</h3>
+                    <p>
+                        Reactor 4 at the Chernobyl Nuclear Power Plant.
+                        The present-day protective structure surrounds
+                        the remains of the destroyed reactor.
+                    </p>
+
+                    <a
+                        href="https://commons.wikimedia.org/wiki/File:Chernobyl_reactor_4.jpg"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        VIEW IMAGE SOURCE ↗
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMPACT SECTION -->
+        <section class="content-section impact-section" id="impact">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-index">04 / LONG-TERM CONSEQUENCES</span>
+                    <h2>THE IMPACT</h2>
+                    <p>
+                        The consequences of the accident extended
+                        far beyond the power plant.
+                    </p>
+                </div>
+            </div>
+
+            <div class="impact-banner">
+                <div class="impact-overlay"></div>
+
+                <div class="impact-content">
+                    <span>BEYOND THE REACTOR</span>
+                    <h3>A DISASTER THAT CHANGED NUCLEAR SAFETY</h3>
+                    <p>
+                        Environmental monitoring, public health,
+                        emergency response, and nuclear safety
+                        became central parts of the global discussion.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="footer-brand">
+            <span>⚛</span>
+            <strong>ELEMENTS UNIVERSE</strong>
+        </div>
+
+        <p>
+            An interactive scientific archive exploring
+            chemistry, physics, and historical incidents.
+        </p>
+
+        <div class="footer-bottom">
+            <span>CHERNOBYL / CASE 001</span>
+            <span>SCIENTIFIC EDUCATIONAL PROJECT</span>
+            <span>© ELEMENTS UNIVERSE</span>
+        </div>
+
+    </footer>
+
+
+    <!-- THREE.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- PAGE SCRIPT -->
+    <script src="chernobyl.js"></script>
+
+</body>
+</html>

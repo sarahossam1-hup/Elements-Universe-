@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090d12">
+
+    <title>ELEMENTS UNIVERSE | Scientific Discovery Platform</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="background-grid"></div>
+    <div class="ambient-glow"></div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+
+        <a href="#home" class="logo">
+            <span class="logo-mark">E.</span>
+            <span class="logo-name">
+                ELEMENTS
+                <small>UNIVERSE / SCIENCE PLATFORM</small>
+            </span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="#home" class="nav-link active">Overview</a>
+            <a href="#periodic" class="nav-link">Periodic Table</a>
+            <a href="#sphere" class="nav-link">3D Universe</a>
+            <a href="#case-files" class="nav-link">Case Files</a>
+        </nav>
+
+        <div class="header-status">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="section-tag">
+                    <span class="tag-line"></span>
+                    THE SCIENCE OF EVERYTHING
+                </div>
+
+                <h1>
+                    BEYOND THE
+                    <span>ELEMENTS.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore the building blocks of matter.
+                    Investigate atomic structures, discover
+                    chemical properties and uncover the science
+                    behind our universe.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#periodic" class="primary-action">
+                        EXPLORE ELEMENTS
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#case-files" class="secondary-action">
+                        INVESTIGATE CASES
+                    </a>
+
+                </div>
+
+                <div class="hero-meta">
+                    <span>CHEMISTRY</span>
+                    <span>ATOMIC SCIENCE</span>
+                    <span>RESEARCH & DISCOVERY</span>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="orbital orbital-one"></div>
+                <div class="orbital orbital-two"></div>
+                <div class="orbital orbital-three"></div>
+
+                <div class="hero-core">
+                    <span>118</span>
+                    <small>ELEMENTS</small>
+                </div>
+
+                <div class="orbit-label label-top">
+                    <small>ATOMIC STRUCTURE</small>
+                    <strong>01 / 118</strong>
+                </div>
+
+                <div class="orbit-label label-bottom">
+                    <small>SCIENTIFIC EXPLORATION</small>
+                    <strong>UNLIMITED</strong>
+                </div>
+
+            </div>
+
+            <div class="hero-index">
+                <span>01</span>
+                <span class="index-line"></span>
+                <span>DISCOVER THE UNKNOWN</span>
+            </div>
+
+        </section>
+
+
+        <!-- PLATFORM STATISTICS -->
+        <section class="platform-stats">
+
+            <div class="stat-item">
+                <span class="stat-number">118</span>
+                <span class="stat-label">CHEMICAL ELEMENTS</span>
+            </div>
+
+            <div class="stat-item">
+                <span class="stat-number">07</span>
+                <span class="stat-label">PERIODS</span>
+            </div>
+
+            <div class="stat-item">
+                <span class="stat-number">18</span>
+                <span class="stat-label">GROUPS</span>
+            </div>
+
+            <div class="stat-item">
+                <span class="stat-number">∞</span>
+                <span class="stat-label">DISCOVERIES</span>
+            </div>
+
+        </section>
+
+
+        <!-- PERIODIC TABLE -->
+        <section class="periodic-section" id="periodic">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="section-tag">
+                        <span class="tag-line"></span>
+                        ELEMENT DATABASE / 001
+                    </div>
+
+                    <h2>
+                        PERIODIC
+                        <span>TABLE</span>
+                    </h2>
+
+                    <p>
+                        Explore the complete collection of chemical
+                        elements and their fundamental properties.
+                    </p>
+                </div>
+
+                <div class="section-number">01 — 03</div>
+
+            </div>
+
+            <div class="table-toolbar">
+
+                <div class="table-info">
+                    <span class="status-dot"></span>
+                    INTERACTIVE ELEMENT DATABASE
+                </div>
+
+                <div class="search-wrapper">
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search name, symbol or atomic number..."
+                        autocomplete="off"
+                    >
+                </div>
+
+            </div>
+
+            <div
+                class="periodic-table"
+                id="periodicTable">
+            </div>
+
+        </section>
+
+
+        <!-- 3D UNIVERSE -->
+        <section class="sphere-section active" id="sphere">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="section-tag">
+                        <span class="tag-line"></span>
+                        SPATIAL VISUALIZATION / 002
+                    </div>
+
+                    <h2>
+                        ELEMENTS
+                        <span>IN MOTION</span>
+                    </h2>
+
+                    <p>
+                        A three-dimensional exploration of the
+                        chemical elements. Rotate the structure
+                        and select an element to investigate.
+                    </p>
+                </div>
+
+                <div class="section-number">02 — 03</div>
+
+            </div>
+
+            <div class="sphere-interface">
+
+                <div class="sphere-top-label">
+                    <span>● LIVE 3D MODEL</span>
+                    <span>INTERACTIVE MODE</span>
+                </div>
+
+                <div id="atomSphere"></div>
+
+                <div class="sphere-bottom-label">
+                    <span>DRAG TO ROTATE</span>
+                    <span>SELECT ELEMENT TO EXPLORE</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CASE FILES -->
+        <!-- CASE FILES -->
+<section class="case-section" id="case-files">
+
+    <div class="section-heading">
+
+        <div>
+            <div class="section-tag">
+                <span class="tag-line"></span>
+                SCIENTIFIC INVESTIGATION / 003
+            </div>
+
+            <h2>
+                CASE
+                <span>FILES</span>
+            </h2>
+
+            <p>
+                Investigate historical chemical and nuclear
+                disasters through scientific evidence,
+                environmental analysis and research.
+            </p>
+        </div>
+
+        <div class="section-number">03 — 03</div>
+
+    </div>
+
+    <div class="case-grid">
+
+        <!-- CHERNOBYL -->
+        <a href="chernobyl.html" class="case-card chernobyl-card">
+
+            <div class="case-image chernobyl-image">
+                <div class="case-image-overlay"></div>
+                <span class="case-id">CASE / 001</span>
+                <span class="case-category">NUCLEAR INCIDENT</span>
+            </div>
+
+            <div class="case-content">
+                <div class="case-date">26 APRIL 1986</div>
+                <h3>CHERNOBYL</h3>
+
+                <p>
+                    Investigating the nuclear accident,
+                    radioactive materials and its long-term
+                    environmental consequences.
+                </p>
+
+                <div class="case-footer">
+                    <span>UKRAINE / 1986</span>
+                    <span class="case-arrow">↗</span>
+                </div>
+            </div>
+
+        </a>
+
+        <!-- BHOPAL -->
+        <a href="bhopal.html" class="case-card bhopal-card">
+
+            <div class="case-image bhopal-image">
+                <div class="case-image-overlay"></div>
+                <span class="case-id">CASE / 002</span>
+                <span class="case-category">CHEMICAL INCIDENT</span>
+            </div>
+
+            <div class="case-content">
+                <div class="case-date">02 DECEMBER 1984</div>
+                <h3>BHOPAL</h3>
+
+                <p>
+                    An investigation into the industrial
+                    chemical disaster involving methyl
+                    isocyanate.
+                </p>
+
+                <div class="case-footer">
+                    <span>INDIA / 1984</span>
+                    <span class="case-arrow">↗</span>
+                </div>
+            </div>
+
+        </a>
+
+        <!-- FUKUSHIMA -->
+        <a href="fukushima.html" class="case-card fukushima-card">
+
+            <div class="case-image fukushima-image">
+                <div class="case-image-overlay"></div>
+                <span class="case-id">CASE / 003</span>
+                <span class="case-category">NUCLEAR INCIDENT</span>
+            </div>
+
+            <div class="case-content">
+                <div class="case-date">11 MARCH 2011</div>
+                <h3>FUKUSHIMA</h3>
+
+                <p>
+                    Exploring the nuclear accident,
+                    reactor safety and radioactive
+                    contamination.
+                </p>
+
+                <div class="case-footer">
+                    <span>JAPAN / 2011</span>
+                    <span class="case-arrow">↗</span>
+                </div>
+            </div>
+
+        </a>
+
+        <!-- MINAMATA -->
+        <a href="minamata.html" class="case-card minamata-card">
+
+            <div class="case-image minamata-image">
+                <div class="case-image-overlay"></div>
+                <span class="case-id">CASE / 004</span>
+                <span class="case-category">ENVIRONMENTAL DISASTER</span>
+            </div>
+
+            <div class="case-content">
+                <div class="case-date">1950s</div>
+                <h3>MINAMATA</h3>
+
+                <p>
+                    Examining mercury pollution,
+                    industrial waste and its effects
+                    on marine ecosystems.
+                </p>
+
+                <div class="case-footer">
+                    <span>JAPAN / 1950s</span>
+                    <span class="case-arrow">↗</span>
+                </div>
+            </div>
+
+        </a>
+
+    </div>
+
+    <div class="case-note">
+        <span>RESEARCH ARCHIVE</span>
+        <p>
+            Historical case studies presented for
+            scientific and educational purposes.
+        </p>
+    </div>
+
+</section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+
+        <div class="footer-brand">
+            <span class="logo-mark">E.</span>
+
+            <div>
+                <strong>ELEMENTS UNIVERSE</strong>
+                <small>EXPLORE. DISCOVER. UNDERSTAND.</small>
+            </div>
+        </div>
+
+        <div class="footer-credit">
+            DESIGNED BY SARAH HOSSAM LOTFY
+        </div>
+
+        <div class="footer-bottom">
+            <span>SCIENTIFIC DISCOVERY PLATFORM</span>
+            <span>© 2026 ELEMENTS UNIVERSE</span>
+        </div>
+
+    </footer>
+
+
+    <!-- ELEMENT DETAILS MODAL IS CREATED BY JAVASCRIPT -->
+
+
+    <!-- THREE.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- MAIN SCRIPT -->
+    <script src="script.js"></script>
+    
+    
+<section class="sarah-signature">
+    <div class="signature-line"></div>
+
+    <p class="signature-label">THE CREATOR BEHIND THE UNIVERSE</p>
+
+    <h2 id="sarah-name"></h2>
+
+    <p class="signature-footer">A MIND BEHIND THE ELEMENTS.</p>
+</section>
+
+
+
+
+</body>
+</html>
